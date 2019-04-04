@@ -1,0 +1,41 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+
+
+/* Define how SqPaymentForm iframes should look */
+.eddsq-input {
+    border: 1px solid #bbb;
+    border-radius: 3px;
+    outline-offset: -2px;
+    margin-bottom: 5px;
+    display: inline-block;
+    min-height: 35px;
+}
+
+/* Define how SqPaymentForm iframes should look when they have focus */
+.eddsq-input--focus {
+    outline: 5px auto rgb(59, 153, 252);
+}
+
+/* Define how SqPaymentForm iframes should look when they contain invalid values */
+.njsq-input--error {
+    outline: 5px auto rgb(255, 97, 97);
+}
+
+.edd_square_error {
+    background-color: #f2dede;
+    border-color: #d59595;
+    color: #a94442;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    padding: 8px;
+    margin-bottom: 18px;
+    border-radius: 2px;
+}
+
+.edd_square_container .date, .edd_square_container .cvv {
+    display: inline-block;
+    width: 49%;
+}
