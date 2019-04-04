@@ -2,11 +2,11 @@
 /*
   Plugin Name: Square Gateway for EDD
   Plugin URL:
-  Description: Square payment integration with Easy Digital Downloads. Repacked by Joseph for client use.
-  Version: 1.0.0
+  Description: Square payment integration with Easy Digital Downloads.
+  Version: 1.0
   Text Domain: square-edd
-  Author: Joseph Di Pasquale
-  Author URI: https://josephdp.com
+  Author: Jogoyo
+  Author URI: https://github.com/jogoyo/Square-Gateway-for-EDD
  */
 
 // Exit if accessed directly
@@ -45,7 +45,7 @@ if ( ! class_exists( 'Square_EDD' ) ) {
 		public function notice_for_api_credentials() {
 			?>
             <div id="message" class="error">
-                <p><?php printf( __( 'Square API credentials are required.  ', 'square-edd' ) ); ?><a
+                <p><?php printf( __( 'Square API credentials are required. ', 'square-edd' ) ); ?><a
                             href="<?php echo admin_url() . 'edit.php?post_type=download&page=edd-settings&tab=gateways&section=square' ?>"><?php _e( 'Click here to add them now.' ); ?></a>
                 </p>
             </div>
@@ -55,7 +55,7 @@ if ( ! class_exists( 'Square_EDD' ) ) {
 		public function square_edd_inactive_plugin_notice() {
 			?>
             <div id="message" class="error">
-                <p><?php printf( __( 'Square EDD requires Easy Digital Download to be installed! ', 'square-edd' ) ); ?></p>
+                <p><?php printf( __( 'Square Gateway for EDD requires Easy Digital Download to be installed and activated! ', 'square-edd' ) ); ?></p>
             </div>
 			<?php
 		}
